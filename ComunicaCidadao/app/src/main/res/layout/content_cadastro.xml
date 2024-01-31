@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.comunicacidadao.CadastroActivity"
+    android:background="@drawable/fnd"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    tools:showIn="@layout/activity_cadastro">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preencha os seguintes campos:"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"
+        android:id="@+id/etCadastroNome"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_edit_text"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu CPF"
+        android:id="@+id/etCadastroCPF"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:background="@drawable/background_edit_text"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu telefone"
+        android:id="@+id/etCadastroTelefone"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:inputType="number"
+        android:background="@drawable/background_edit_text"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu Login"
+        android:id="@+id/etCadastroLogin"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_edit_text"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua senha"
+        android:id="@+id/etCadastroSenha"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_edit_text"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR"
+        android:id="@+id/bCadastroCadastrar"
+        android:background="@drawable/background_button2"
+        android:layout_marginBottom="20dp"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:id="@+id/bCadastroCancelar"
+        android:background="@drawable/background_button2"
+
+    />
+
+</LinearLayout>

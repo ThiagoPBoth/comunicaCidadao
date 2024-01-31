@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.comunicacidadao.CriarChamadoActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/fnd"
+    android:gravity="center_vertical"
+    tools:showIn="@layout/activity_criar_chamado">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insira os dados necessários:"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCriarChamadoTitulo"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Digite o título do chamado"
+    />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Para qual setor o seu chamado irá?"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+
+        />
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sCriarChamadoSetor"
+        android:layout_marginBottom="20dp"
+        android:padding="1dp"
+        android:background="@drawable/background_spinner"
+
+    />
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCriarChamadoDescricao"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background_edit_text"
+        android:hint="Digite a descrição do chamado"
+    />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar imagem"
+        android:id="@+id/bCriarChamadoImagem"
+        android:background="@drawable/background_button"
+    />
+
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@null"
+        android:id="@+id/ivCriarChamadoVerImagem"
+        android:layout_marginBottom="20dp"
+
+    />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="criar"
+        android:id="@+id/bCriarChamadoCriar"
+        android:background="@drawable/background_button2"
+    />
+
+
+
+
+</LinearLayout>

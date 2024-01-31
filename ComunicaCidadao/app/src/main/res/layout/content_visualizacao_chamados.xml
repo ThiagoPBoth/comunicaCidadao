@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.comunicacidadao.VisualizacaoChamadosActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/fnd"
+    tools:showIn="@layout/activity_visualizacao_chamados">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+    >
+
+            <EditText
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:hint="Busque por um título"
+                android:id="@+id/etVisualizacaoChamadosPesquisar"
+            />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bVisualizacaoChamadosBuscar"
+                    android:text="Buscar"
+                    android:background="#1E90FF"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/rvVisualizacaoChamadosRecyclerView"
+            android:scrollbars="vertical"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
